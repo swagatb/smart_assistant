@@ -1,0 +1,7 @@
+cd GUI
+npm install
+apt-get install python-pip python-dev build-essential 
+apt-get install ffmpeg
+cd ../myAssistant
+pip install --upgrade pip 
+./setup.sh
