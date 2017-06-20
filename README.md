@@ -1,7 +1,8 @@
 # Build an Assistant, combining 
 ## - SmartMirror(https://github.com/MichMich/MagicMirror), 
-## - A Localchatbot
+## - A Localchatbot,
 ## - Google Assistant
+
 
 # Setup Guide
 
