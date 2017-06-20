@@ -1,15 +1,14 @@
 # Build an Assistant, combining 
-# - SmartMirror(https://github.com/MichMich/MagicMirror), 
-# - A Localchatbot
-# - Google Assistant
+## - SmartMirror(https://github.com/MichMich/MagicMirror), 
+## - A Localchatbot
+## - Google Assistant
 
-## Setup Guide
+# Setup Guide
 
-## Magic Mirror
 Download the stable version of Node.js: 
-https://nodejs.org/en/
+`https://nodejs.org/en/`
 
-Clone the latest code from:
+Clone the latest code from gitlab:
 
 Navigate inside the GUI folder
 
@@ -27,21 +26,25 @@ npm start
  
 Make sure Ruby is installed: https://www.ruby-lang.org/en/documentation/installation/
  
-Install Homebrew: http://brew.sh/
- 
-Navigate to the myAssistant folder
+Navigate to `myAssistant` folder
 
 Install ffmpeg
 ```
 apt-get install ffmpeg
 ```
 
-Use `setup.sh` to create a virtual environment and install dependencies
+Use `setup.sh` to install dependencies
 ```shell
 sudo ./setup.sh
 ```
 
-Replace wit.ai and darksky.net tokens in the `bot.py` file
+Create `env.sh` file in `myAssistant` directory and add below credential to it
+```
+#! /bin/bash
+export weather_api_token="<key>" # weather.com api key
+export wit_ai_token="Bearer <key>" # wit.ai token
+export SPEECH_KEY="<key>" # google speach API
+```
 
 Make sure GUI is running, then start the AI
 ```shell
