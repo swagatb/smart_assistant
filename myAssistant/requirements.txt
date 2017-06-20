@@ -1,0 +1,8 @@
+speechrecognition
+gtts
+py4j
+python-dateutil
+pydub
+feedparser
+numpy
+chatterbot

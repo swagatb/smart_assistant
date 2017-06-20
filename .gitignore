@@ -1,0 +1,5 @@
+*.pyc
+env.sh
+client_*.json
+venv/
+database.db
