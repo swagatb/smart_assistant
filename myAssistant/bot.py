@@ -4,6 +4,9 @@
 import os
 import sys
 sys.path.append("./")
+from subprocess import call
+
+call(["source", "env.sh"])
 
 import requests
 import datetime
